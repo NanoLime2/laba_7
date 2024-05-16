@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, sans-serif;
+}
+.mySlides {
+    display: none;
+}
+img {
+    position: absolute;
+    vertical-align: middle;
+    width: 75%;
+    top: 100px;
+    left: 11%;
+}
+
+/*Сам слайдер*/
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/*Текст на картинке*/
+.text {
+  color: #f2f2f2;
+  font-size: 50px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 760px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Нумерация картинки */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Индекатор слайда */
+.dots{
+    text-align:center
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: 850px;
+  left: -25px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* Смена цвета на активный слайд */
+.active {
+  background-color: #717171;
+}
+
+/* Анимация появление нового слайда */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  0% {
+      opacity: .4
+  }
+  100% {
+      opacity: 1
+  }
+}
+
+
+
